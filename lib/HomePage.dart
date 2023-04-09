@@ -29,9 +29,9 @@ class _HomePageState extends State<HomePage> {
       {
         'id': DateTime.now(),
         'Number of pizza bases': _numberOfPizzaBase,
-        'Amount of chicken (in kg)': _chicken,
-        'Amount of cheese (in kg)': _cheese,
-        'Enter amount of souce': _souce,
+        'Amount of chicken (in gm)': _chicken,
+        'Amount of cheese (in gm)': _cheese,
+        'Amount of souce(in ml)': _souce,
       },
     );
     print('okokoko');
@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Inventory Managment'),
+        title: Text('Inventory Managment'),
       ),
       body: ListView(
         children: [
@@ -66,6 +66,7 @@ class _HomePageState extends State<HomePage> {
                         if (value!.isEmpty) {
                           return 'Provide a Value';
                         }
+                        return null;
                       },
                       onSaved: ((newValue) {
                         _numberOfPizzaBase = int.parse(newValue!);
@@ -73,7 +74,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     TextFormField(
                       decoration: InputDecoration(
-                        label: Text('Enter amount of chicken(in kg)'),
+                        label: Text('Enter amount of chicken(in gm)'),
                       ),
                       validator: (value) {
                         if (value!.isEmpty) {
@@ -86,7 +87,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     TextFormField(
                       decoration: InputDecoration(
-                        label: Text('Enter amount of cheese(in kg)'),
+                        label: Text('Enter amount of cheese(in gm)'),
                       ),
                       validator: (value) {
                         if (value!.isEmpty) {
@@ -99,7 +100,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     TextFormField(
                       decoration: InputDecoration(
-                        label: Text('Enter amount of souce(in L)'),
+                        label: Text('Enter amount of souce(in ml)'),
                       ),
                       validator: (value) {
                         if (value!.isEmpty) {
@@ -149,11 +150,11 @@ class _HomePageState extends State<HomePage> {
                     itemBuilder: (context, index) {
                       final pizzebase =
                           documents[index]['Number of pizza bases'];
-                      final souces = documents[index]['Enter amount of souce'];
+                      final souces = documents[index]['Amount of souce(in ml)'];
                       final cheese =
-                          documents[index]['Amount of cheese (in kg)'];
+                          documents[index]['Amount of cheese (in gm)'];
                       final chickens =
-                          documents[index]['Amount of chicken (in kg)'];
+                          documents[index]['Amount of chicken (in gm)'];
                       print(pizzebase);
                       print(souces);
                       print(cheese);
@@ -183,7 +184,7 @@ class _HomePageState extends State<HomePage> {
                             Text(
                                 'Amount of chicken(in kg): ${chickens - 400 * pizzaInt}'),
                             Text(
-                                'Amount of cheese(in kg): ${cheese -  200 * pizzaInt}'),
+                                'Amount of cheese(in kg): ${cheese - 200 * pizzaInt}'),
                             Text(
                                 'Amount of souce(in L): ${souces - 100 * pizzaInt}'),
                           ],

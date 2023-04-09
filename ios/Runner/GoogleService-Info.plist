@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>884369139876-m8ie1t8d63b8itn74fhpq4anljm6ldr0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.884369139876-m8ie1t8d63b8itn74fhpq4anljm6ldr0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAYQ_wVP1_vV2QiCVPxmWDyLI9Ji2bnkAQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>884369139876</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.taskInternApp</string>
+	<key>PROJECT_ID</key>
+	<string>task-intern-1cefe</string>
+	<key>STORAGE_BUCKET</key>
+	<string>task-intern-1cefe.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:884369139876:ios:9ece5c0b5e30d5c3509e31</string>
+	<key>DATABASE_URL</key>
+	<string>https://task-intern-1cefe-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

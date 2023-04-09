@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "884369139876",
+    "project_id": "task-intern-1cefe",
+    "storage_bucket": "task-intern-1cefe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884369139876:android:9243a4c275cf3f72509e31",
+        "android_client_info": {
+          "package_name": "com.example.task_intern_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884369139876-4c1p0hfrq84rnhkdgimhbbtjfsu7ri51.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDETQNFmkgvEk9jsiq94zsvrS2MnpzSnYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884369139876-4c1p0hfrq84rnhkdgimhbbtjfsu7ri51.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
